@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["title"] = "Countdown ";
+}
+
+<form asp-controller="Account" asp-action="Logout" method="post" class="page-navigation logout-page-navigation">
+    <button type="submit" class="logout-button" aria-label="Log out and return to the login page">
+        <span>Logout</span><span class="logout-icon" aria-hidden="true">↗</span>
+    </button>
+</form>
+
+<!-- Countdown Section -->
+<section id="countdown" class="countdown-section">
+    <div class="container">
+        <div class="page-heading">
+            <p class="eyebrow">Save the date</p>
+            <h1 class="section-title">The celebration is getting closer</h1>
+            <p>A special day deserves its own countdown. Every second brings the birthday a little nearer.</p>
+        </div>
+        <div class="countdown-container">
+            <div class="countdown-input">
+                <span class="countdown-kicker">Birthday celebration</span>
+                <label for="birthdayDate">6 September 2026</label>
+                <input type="datetime-local" id="birthdayDate" value="2026-09-06T00:00">
+            </div>
+
+            <div class="countdown-display" id="countdownDisplay">
+                <div class="time-unit">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+
+            <div class="countdown-message" id="countdownMessage">
+                <span class="countdown-message-icon">✦</span>
+                <div><p class="countdown-message-label">The celebration is coming</p><p class="countdown-message-text">Counting down to your beautiful day.</p></div>
+            </div>
+        </div>
+    </div>
+</section>

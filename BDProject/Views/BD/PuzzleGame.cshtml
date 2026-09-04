@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["title"] = "Puzzle Game";
+}
+<div class="page-navigation">
+    <a asp-controller="BD"
+       asp-action="Letter"
+       class="next-page-btn">
+        <span>Next</span>
+        <span class="next-arrow">→</span>
+    </a>
+</div>
+
+<!-- Puzzle Game Section -->
+<section id="game" class="game-section">
+    <div class="container">
+        <p class="eyebrow text-center">Chapter 04 — a little challenge for you</p>
+        <h1 class="section-title">A Little Puzzle for the Most Beautiful Girl ❤️❤️</h1>
+        <p class="puzzle-help">📱 On mobile: tap one piece, then tap another piece to swap them.</p>
+        <div class="game-controls">
+            @* <div class="difficulty-selector">
+                <label>Difficulty:</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy (3x3)</option>
+                    <option value="medium">Medium (4x4)</option>
+                    <option value="hard">Hard (5x5)</option>
+                </select>
+            </div> *@
+            <div class="game-stats">
+                <div class="stat">
+                    <span>Time:</span>
+                    <span id="gameTimer">00:00</span>
+                </div>
+                <div class="stat">
+                    <span>Moves:</span>
+                    <span id="moveCounter">0</span>
+                </div>
+            </div>
+            <button class="game-btn" id="newGameBtn">New Game</button>
+            <button class="game-btn" id="showSolutionBtn">Show Solution</button>
+        </div>
+
+        <div class="puzzle-container">
+            <div class="puzzle-board" id="puzzleBoard">
+                <!-- Puzzle pieces will be generated here -->
+            </div>
+            <div class="solution-preview" id="solutionPreview">
+                <h4>Solution Preview:</h4>
+                <img src="" alt="Solution" id="solutionImage">
+            </div>
+        </div>
+
+        <div class="game-completion" id="gameCompletion" style="display: none;">
+            <div class="completion-message">
+                <span class="completion-spark">✦</span>
+                <p class="completion-kicker">You did it</p>
+                <h3>Beautifully solved! 🎉</h3>
+                <div class="completion-photo-frame"><img id="completionImage" src="" alt="The completed special memory" /></div>
+                <p class="completion-copy">You put this special memory back together.</p>
+                <div class="completion-stats"><span><small>Time</small><b id="finalTime"></b></span><span><small>Moves</small><b id="finalMoves"></b></span></div>
+                <div class="completion-actions">
+                    <button class="game-btn completion-replay" id="playAgainBtn">Play Again <span>↻</span></button>
+                    <button class="completion-new-game" id="completionNewGameBtn" type="button">New Game <span>＋</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

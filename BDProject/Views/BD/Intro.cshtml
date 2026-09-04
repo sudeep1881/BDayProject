@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "A Birthday Surprise";
+}
+
+<div class="page-navigation">
+    <a asp-controller="BD" asp-action="photos" class="next-page-btn"><span>Next</span><span class="next-arrow">→</span></a>
+</div>
+
+<section class="intro-section">
+    <div class="intro-photo-frame">
+        <img src="~/images/IMG20250402131104.jpg" alt="A special birthday memory" />
+    </div>
+    <div class="intro-copy">
+        <p class="eyebrow">A little surprise, made just for you ✨</p>
+        <h1>Happy Birthday,<br /><em>my special person.</em></h1>
+        <p class="intro-lead">
+            From the bottom of my heart, I wish you the happiest birthday. ❤️
+
+            May your life always be filled with happiness, beautiful moments, endless smiles, and everything your heart desires. You are truly a special person, and I hope this new year of your life brings you all the love and happiness you deserve.
+
+            Happy Birthday once again, beautiful girl. ✨🎂❤️
+        </p>
+        <div class="intro-note"><span>✦</span> Keep scrolling. There are a few memories waiting for you.</div>
+        <a class="cta-button" asp-controller="BD" asp-action="photos">Begin the journey <span>→</span></a>
+    </div>
+</section>

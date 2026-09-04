@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "8 Special Photos";
+}
+
+<div class="page-navigation">
+    <a asp-controller="BD" asp-action="PuzzleGame" class="next-page-btn"><span>Next</span><span class="next-arrow">→</span></a>
+</div>
+
+<section class="special-moments-section">
+    <div class="page-heading">
+        <p class="eyebrow">A little collection, just for you</p>
+        <h1 class="section-title">The Girl Who Makes Everything Beautiful</h1>
+        <p>Just a few little moments of the beautiful person you are, inside and out. ❤️</p>
+    </div>
+
+
+    <div class="memory-wheel" aria-label="One of the most beautiful girls in the world">
+        <div class="memory-wheel__orbit">
+            <figure class="wheel-photo wheel-photo--1"><img src="~/images/specialmomentphotos/1707899947570.jpg" alt="Special moment 1" /></figure>
+            <figure class="wheel-photo wheel-photo--2"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-04 at 11.49.42 pm.jpeg" alt="Special moment 2" /></figure>
+            <figure class="wheel-photo wheel-photo--3"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-05 at 12.07.21 am.jpeg" alt="Special moment 3" /></figure>
+            <figure class="wheel-photo wheel-photo--4"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-05 at 12.16.20 am.jpeg" alt="Special moment 4" /></figure>
+            <figure class="wheel-photo wheel-photo--5"><img src="~/images/specialmomentphotos/1673534469868.jpg" alt="Special moment 5" /></figure>
+            <figure class="wheel-photo wheel-photo--6"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-04 at 11.49.43 pm.jpeg" alt="Special moment 6" /></figure>
+            <figure class="wheel-photo wheel-photo--7"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-04 at 11.51.19 pm.jpeg" alt="Special moment 7" /></figure>
+            <figure class="wheel-photo wheel-photo--8"><img src="~/images/specialmomentphotos/whatsapp image 2026-09-05 at 12.19.04 am.jpeg" alt="Special moment 8" /></figure>
+        </div>
+        <div class="memory-wheel__center" id="memoryWheelCenter">
+            <img id="memoryWheelPreview" src="~/images/specialmomentphotos/1707899947570.jpg" alt="Special moment 1" />
+        </div>
+    </div>
+    <dialog class="photo-modal" id="specialPhotoModal">
+        <button class="modal-close" type="button" aria-label="Close photo">×</button>
+        <img id="specialModalImage" src="" alt="Selected special memory" />
+        <p id="specialModalCaption"></p>
+    </dialog>
+
+</section>

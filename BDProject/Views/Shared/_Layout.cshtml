@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BDProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BDProject.styles.css" asp-append-version="true" />
+    <link href="~/date,photo,puzzle 700/style.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/celebration.css" rel="stylesheet" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="background-animation">
+
+        <div class="floating-balloons">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="balloon balloon-4">🎈</div>
+            <div class="balloon balloon-5">🎈</div>
+        </div>
+
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a asp-controller="BD" asp-action="Index" class="nav-logo">A birthday journey</a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a asp-controller="BD" asp-action="Index" class="nav-link">01 Beginning</a></li>
+                <li><a asp-controller="BD" asp-action="photos" class="nav-link">02 Memories</a></li>
+                <li><a asp-controller="BD" asp-action="SpecialMoments" class="nav-link">03 Special</a></li>
+                <li><a asp-controller="BD" asp-action="PuzzleGame" class="nav-link">04 Puzzle Game</a></li>
+                @* <li><a asp-controller="BD" asp-action="Places" class="nav-link">05 Places</a></li> *@
+                @* <li><a asp-controller="BD" asp-action="Songs" class="nav-link">06 Songs</a></li> *@
+                <li><a asp-controller="BD" asp-action="Letter" class="nav-link">05 Letter</a></li>
+                <li><a asp-controller="BD" asp-action="Countdown" class="nav-link">06 Birthday</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main role="main" class="pb-3 page-content">
+            @RenderBody()
+        </main>
+    </div>
+
+    @if (!string.Equals(ViewContext.RouteData.Values["action"]?.ToString(), "Index", StringComparison.OrdinalIgnoreCase))
+    {
+        <button class="mobile-back-button" type="button" onclick="window.history.back()" aria-label="Go back">
+            <span>Back</span><span>←</span>
+        </button>
+    }
+
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/date,photo,puzzle 700/script.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,83 @@
+@{
+ViewData["Title"] = "A Letter For You";
+}
+
+<div class="page-navigation">
+    <a asp-controller="BD" asp-action="Countdown" class="next-page-btn">
+        <span>Next</span>
+        <span class="next-arrow">→</span>
+    </a>
+</div>
+
+<section class="journey-section letter-section">
+
+
+<div class="page-heading">
+    <p class="eyebrow">Chapter 05 — Just for You</p>
+
+    <h1 class="section-title">A Letter From My Heart</h1>
+
+    <p>
+        Some feelings are too special to be left unsaid,
+        so I chose to write them from my heart.
+    </p>
+</div>
+
+<div class="envelope-wrap">
+    <button class="envelope"
+            id="openLetter"
+            type="button"
+            aria-expanded="false">
+
+        <span class="envelope-flap">💌</span>
+        <span>Open My Letter</span>
+
+    </button>
+</div>
+
+<article class="love-letter" id="loveLetter" hidden>
+
+    <p class="letter-greeting">
+        Dear My Special Person,
+    </p>
+
+ 
+
+    <p>
+        Thank you for every smile, every conversation, every laugh,
+        and every little moment that slowly became a beautiful memory.
+        You have a wonderful way of making ordinary days feel brighter
+        without even realizing it.
+    </p>
+
+    <p>
+        Your presence brings warmth, happiness, and something special
+        that is difficult to describe but impossible not to feel.
+        I genuinely appreciate every moment we share.
+    </p>
+
+    <p>
+        On your birthday, my wish for you is simple — may your life be
+        filled with endless happiness, beautiful memories, success,
+        and all the love you truly deserve.
+    </p>
+
+    <p>
+        Keep smiling, keep dreaming, and never forget how special you
+        are. I hope this little journey I created for you reminds you
+        of just how much you are appreciated.
+    </p>
+
+    <p>
+        Thank you for being you. ❤️
+    </p>
+
+    <p class="letter-signoff">
+        With all my love,<br />
+        Always yours.
+    </p>
+
+</article>
+
+
+</section>
