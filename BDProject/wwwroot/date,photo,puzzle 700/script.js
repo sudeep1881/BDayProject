@@ -36,14 +36,14 @@ const audioTracks = [
 
 // Puzzle uses only her Chapter 3 special photos.
 const puzzleImages = [
-    "/images/specialmomentphotos/1707899947570.jpg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-04%20at%2011.49.42%20PM.jpeg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-05%20at%2012.07.21%20AM.jpeg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-05%20at%2012.16.20%20AM.jpeg",
-    "/images/specialmomentphotos/1673534469868.jpg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-04%20at%2011.49.43%20PM.jpeg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-04%20at%2011.51.19%20PM.jpeg",
-    "/images/specialmomentphotos/WhatsApp%20Image%202026-09-05%20at%2012.19.04%20AM.jpeg"
+    "/Images/SpecialMomentPhotos/Img1.jpg",
+    "/Images/SpecialMomentPhotos/Img2.jpeg",
+    "/Images/SpecialMomentPhotos/Img3.jpeg",
+    "/Images/SpecialMomentPhotos/Img4.jpeg",
+    "/Images/SpecialMomentPhotos/Img5.jpg",
+    "/Images/SpecialMomentPhotos/Img6.jpeg",
+    "/Images/SpecialMomentPhotos/Img7.jpeg",
+    "/Images/SpecialMomentPhotos/Img8.jpeg"
 ];
 
 // DOM Elements
